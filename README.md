@@ -34,3 +34,7 @@ Now, open the command terminal, navigate into the directory where you cloned thi
 
 Now you are all set to run the project & test it on your local machine.
 
+
+
+https://user-images.githubusercontent.com/51540683/136703265-ab2eeb98-9617-41fc-b904-415ea4f014ea.mp4
+
