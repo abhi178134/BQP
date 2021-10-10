@@ -5,15 +5,13 @@ import Spinner from "./Spinner";
 
 const Charts = () => {
     const[loading,setLoading]=useState(true);
-    const[res,setRes]=useState([]);
-    const margin = {top: 20, right: 20, bottom: 30, left: 40};
+    // const margin = {top: 20, right: 20, bottom: 30, left: 40};
     const[states,setStates]=useState([]);
     const[freq,setFreq]=useState([]);
     
     useEffect(()=>{
         axios.get('http://127.0.0.1:8000/api/applicants/')
         .then(res => {
-        setRes(res.data);
         var state = res.data.map(item=>item.state);
         setStates(state);
         var count = res.data.map(item=>item.count);
@@ -49,7 +47,7 @@ const Charts = () => {
             <Bar
                 data={properties}        
             />
-    
+                
             </div>
 
         }

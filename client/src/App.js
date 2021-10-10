@@ -1,4 +1,4 @@
-import { BrowserRouter,useHistory,Switch,Route,Redirect } from 'react-router-dom';
+import { BrowserRouter,Route} from 'react-router-dom';
 import AddApplicant from './components/AddApplicant';
 import View from './components/View';
 import Charts from './components/Charts';

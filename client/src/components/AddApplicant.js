@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import {Form,Row,Col,Button} from 'react-bootstrap';
-//import ApplicantsService from '../services/applicant.service';
+import { useHistory } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from "axios";
 
@@ -9,6 +9,7 @@ const AddApplicant = () => {
     const [name,setName] = useState('');
     const [regNo,setRegNo] = useState(0);
     const [state,setState] = useState('');
+    const history = useHistory();
     const myArray ={
         "AN": "Andaman and Nicobar Islands",
         "AP": "Andhra Pradesh",
@@ -63,7 +64,8 @@ const AddApplicant = () => {
             state:state
         };
         axios.post('http://127.0.0.1:8000/api/applicants',applicantObject)
-        .then(res => console.log(res.data));
+        .then(history.push('/view'));
+        
     }
     return (
         <>
@@ -78,21 +80,26 @@ const AddApplicant = () => {
             <Form.Group className="mb-3">
                 <Row>
                     <Col xs="4" >
-                        <Form.Label className="pl-5">Reg No.</Form.Label>
+                        <div style={{fontSize:'medium',fontWeight:'bold',marginLeft:'8vw'}}>
+                            <Form.Label className="pl-5">Reg No.</Form.Label>
+                        </div>
                     </Col>
+
                     <Col xs ="6">
                         <Form.Control onChange={(e)=>setRegNo(e.target.value)} type = "number" placeholder ="Reg No" />
                     </Col>
                 </Row>
             </Form.Group>
 
-            <Form.Group className="mb-3">
+            <Form.Group className="mb-3 ml-4">
                 <Row>
-                    <Col xs="4">
+                    <Col xs="4" >
+                    <div style={{fontSize:'medium',fontWeight:'bold',marginLeft:'8vw'}}>
                         <Form.Label>Name</Form.Label>
+                    </div>
                     </Col>
                     <Col xs ="6">
-                        <Form.Control onChange={(e)=>setName(e.target.value)} type = "text" placeholder ="Name" />
+                       <Form.Control onChange={(e)=>setName(e.target.value)} type = "text" placeholder ="Name" />
                     </Col>
                 </Row>
             </Form.Group>
@@ -100,7 +107,9 @@ const AddApplicant = () => {
             <Form.Group className="mb-3">
                 <Row>
                     <Col xs="4">
+                    <div style={{fontSize:'medium',fontWeight:'bold',marginLeft:'8vw'}}>
                         <Form.Label>State</Form.Label>
+                    </div>
                     </Col>
                     <Col xs ="6">
                     <Form.Control as="select" onChange={(e)=>setState(e.target.value)} type = "select" className="form-select">
