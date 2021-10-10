@@ -9,9 +9,10 @@ function App() {
     <>
     <Navbar/>
     <BrowserRouter>
-    <Route excat path="/view" component={View} />
-    <Route excat path="/add" component={AddApplicant} />
-    <Route excat path="/charts" component={Charts} />
+    <Route exact path="/" component={AddApplicant} />
+    <Route exact path="/view" component={View} />
+    <Route exact path="/add" component={AddApplicant} />
+    <Route exact path="/charts" component={Charts} />
     </BrowserRouter>
     </>
   );

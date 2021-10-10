@@ -6,8 +6,8 @@ const NavigationBar = () => {
         <>
         <Navbar bg="dark" variant="dark">
           <Container>
-          <Navbar.Brand href="/add">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
+          <Navbar.Brand href="/add">BQP Test</Navbar.Brand>
+          <Nav className="ml-auto">
             <Nav.Link href="/add">Add Applicant</Nav.Link>
             <Nav.Link href="/view">View Grid</Nav.Link>
             <Nav.Link href="/charts">View Chart</Nav.Link>
