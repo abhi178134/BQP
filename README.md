@@ -23,7 +23,7 @@ Open git bash, and clone this repository by running the following command
 
 Now, open the command terminal, navigate into the directory where you cloned this repository using the **`cd`** command, and then hop into the **BQP** directory by using the command **`cd BQP`**
 * Navigate into the **client** folder by using the command **`cd BQP/client`**, and run the command **`npm install`**. This would install all the required dependencies for the client side of the project.
-* Now, navigate into the **server** folder by using the command **`cd ../server`**, and run the command **`pip install -r /path/to/requirements.txt`**. 
+* Now, navigate into the **server** folder by using the command **`cd ../server`**, and run the command **`pip install -r requirements.txt`**. 
 
 ***Congratulations! You've setup the project on your local machine for development.***
 

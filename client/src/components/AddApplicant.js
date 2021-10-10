@@ -75,10 +75,10 @@ const AddApplicant = () => {
                 </h2>
                 </Col>
             </Row>
-            <Form.Group>
+            <Form.Group className="mb-3">
                 <Row>
-                    <Col xs="4">
-                        <Form.Label>Reg No.</Form.Label>
+                    <Col xs="4" >
+                        <Form.Label className="pl-5">Reg No.</Form.Label>
                     </Col>
                     <Col xs ="6">
                         <Form.Control onChange={(e)=>setRegNo(e.target.value)} type = "number" placeholder ="Reg No" />
@@ -86,7 +86,7 @@ const AddApplicant = () => {
                 </Row>
             </Form.Group>
 
-            <Form.Group>
+            <Form.Group className="mb-3">
                 <Row>
                     <Col xs="4">
                         <Form.Label>Name</Form.Label>
@@ -97,13 +97,13 @@ const AddApplicant = () => {
                 </Row>
             </Form.Group>
 
-            <Form.Group>
+            <Form.Group className="mb-3">
                 <Row>
                     <Col xs="4">
                         <Form.Label>State</Form.Label>
                     </Col>
                     <Col xs ="6">
-                    <Form.Control as="select" onChange={(e)=>setState(e.target.value)} type = "select" >
+                    <Form.Control as="select" onChange={(e)=>setState(e.target.value)} type = "select" className="form-select">
                         {options}
                     </Form.Control>
                     </Col>
