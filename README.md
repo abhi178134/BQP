@@ -17,7 +17,7 @@ A simple app where we can manage the applicants & view their details.
 ### Setting up the Project for Development
 ***
 
-Open git bash, and clone this repository by running the following command
+Open git bash, and clone this repository by running the  following command
 
 ##### `git clone https://github.com/abhi178134/BQP.git`
 
