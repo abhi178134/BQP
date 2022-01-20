@@ -17,7 +17,7 @@ A simple app where we can manage the applicants & view their details.
 ### Setting up the Project for Development
 ***
 
-Open git bash, and clone this repository by running the following command
+Open git bash, and clone this repository by running the  following command
 
 ##### `git clone https://github.com/abhi178134/BQP.git`
 
@@ -32,7 +32,7 @@ Now, open the command terminal, navigate into the directory where you cloned thi
 * Open the command terminal, navigate into the **BQP/server** directory and activate the local env variable by running the command **`source newenv/bin/activate`** and run the **`python manage.py runserver`** command to start the Backend Server on default PORT 8000.
 * Open the command terminal, navigate into the **BQP/client** directory, and run the **`npm start`** command to start the React Development server on PORT 3000.
 
-Now you are all set to run the project & test it on your local machine.
+Now you are all set to  run the project & test it on your local machine.
 
 
 
